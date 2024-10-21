@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Tables</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid silver;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>#</td>
+        <td>FirstName</td>
+        <td>LastName</td>
+        <td>Town</td>
+        <td>City</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Akın</td>
+        <td>Cengiz</td>
+        <td>Eyüp</td>
+        <td>İstanbul</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Akın</td>
+        <td>Cengiz</td>
+        <td>Eyüp</td>
+        <td>İstanbul</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Akın</td>
+        <td>Cengiz</td>
+        <td>Eyüp</td>
+        <td>İstanbul</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Akın</td>
+        <td>Cengiz</td>
+        <td>Eyüp</td>
+        <td>İstanbul</td>
+      </tr>
+    </table>
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Town</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td rowspan="4">Akın</td>
+          <td>Cengiz</td>
+          <td>Eyüp</td>
+          <td>İstanbul</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          
+          <td>Cengiz</td>
+          <td>Eyüp</td>
+          <td>İstanbul</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          
+          <td>Cengiz</td>
+          <td>Eyüp</td>
+          <td>İstanbul</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          
+          <td>Cengiz</td>
+          <td>Eyüp</td>
+          <td>İstanbul</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Toplam</td>
+          <td>15000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
