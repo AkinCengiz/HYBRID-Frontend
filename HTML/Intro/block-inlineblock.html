@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Block & Inline Block Elements</title>
+    <style>
+        html{
+            font-size: 26px;
+        }
+        section{
+            width: 50%;
+            height: 250px;
+            background: green;
+        }
+        span{
+            width: 50%;
+            height: 250px;
+            padding: 20px;
+        }
+        i{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+        }
+        .box{
+            background-color: silver;
+            color: red;
+            width: 50%;
+            height: 250px;
+            padding: 20px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- BLOCK ELEMENTS (İÇERİĞİ NE OLURSA OLSUN TÜM SATIRI KAPLAR) -->
+     <h1>BLOCK ELEMENTS</h1>
+    <p>paragraf</p>
+    <div>div</div>
+    <section>Section</section>
+    <footer>Footer</footer>
+    <header>Header</header>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <nav>Nav</nav>
+    <main>Main</main>
+    <h1>Başlık</h1>
+
+    <hr>
+
+    <!-- INLINE ELEMENTS (İÇERİĞİ KADAR YER KAPLAR) -->
+     <!-- Inline elementlere genişlik ve yükseklik değeri verilmesi herhangi bir etki yaratmaz.  -->
+     <h1>INLINE BLOCK ELEMENTS</h1>
+     <span>SPAN</span>
+     <a>Lİnk</a>
+     <i>i element</i>
+     <label>Label</label>
+
+     <!-- INLINE BLOCK ELEMENTS (İÇERİĞİ KADAR YER KAPLAR ancak boyutları değiştirilebilir) -->
+     <!-- Inline block elementlere genişlik ve yükseklik değeri verilebilir.  -->
+     <h1>INLINE BLOCK ELEMENTS</h1>
+     <span>SPAN</span>
+     <a>Lİnk</a>
+     <i>i element</i>
+     <label>Label</label>
+
+
+     <!-- BLOCK ELEMENTS -->
+      <!-- DIV -->
+    <div class="box">
+        <h1>Başlık</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <span>Not</span>
+    </div>
+    <div class="box">
+        Deneme
+    </div>
+</body>
+</html>
