@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Text</title>
+    <style>
+        p#text{
+            width: 400px;
+            height: 200px;
+            border: 1px solid silver;
+            /* Metni yatayda hizalar */
+            /* Left => Soldan hizalar, Right => sağdan hizalar, center => ortalar */
+            text-align: center;
+            /* Metnin yazılış yönünü tanımlar */
+            /* ltr => Soldan sağa yazar (Türkçede olduğu gibi) ==== rtl => Sağdan sola yazar (Arapçada olduğu gibi)  */
+            direction:rtl;
+            unicode-bidi: bidi-override;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #a{
+            /* Metnin üzerini çizer */
+            text-decoration: line-through;
+            /* Metnin bütün harflerini büyük harfe çevirir */
+            text-transform: uppercase;
+        }
+        #b{
+            /* Mentin üst tarafına çizgi çizer */
+            text-decoration: overline;
+            /* Metnin bütün harflerini küçük harfe çevirir */
+            text-transform: lowercase;
+        }
+        #c{
+            /* Mentin alt tarafına çizgi çizer */
+            text-decoration: underline;
+            /* Metin çizgisinin kalınlığını belirler */
+            text-decoration-thickness: 5px;
+            /* Metin çizgisinin rengini belirler */
+            text-decoration-color: red;
+        }
+        #d{
+            /* İki özellik birden verilebilir */
+            text-decoration: underline overline;
+            /* Metnin her kelimesinin ilk harflerini büyük harfe çevirir */
+            text-transform: capitalize;
+        }
+        #e{
+            /* Üç özellik birden verilebilir */
+            text-decoration: underline overline;
+        }
+        .paragraph{
+            /* Paragraf başlangıcında verilecek girintiyi belirler */
+            text-indent: 30px;
+        }
+        .letter-spacing{
+            /* Harf aralık boşluklarını belirler */
+            letter-spacing: 5px;
+        }
+        .line-height{
+            /* Kelimelerin ne kadar bir yükseklik kaplayacağını belirler */
+            line-height: 3rem;
+        }
+        .word-spacing{
+            /* Kelimeler arasındaki boşluk miktarını belirler */
+            word-spacing: 20px;
+        }
+
+        .white-space{
+            /* Cümle sonuna geldiğinde kelimeleri alt satıra kaydırmak ya da kaydırmayı engellemek için kullanılır */
+            /* Wrap değeri kaydırmasını sağlar - nowrap değeri alta kaymasını engellememizi sağlar */
+            white-space: wrap;
+        }
+        .text-shadow{
+            /* Gölge efekti verir 
+            ilk parametre yatay kaydırma yaptırır =>  negatif değer sola pozitif değer sağa gölge verir
+            ikinci parametre dikey kaydırma yaptırır => negatif değer üste pozitif değer alta gölge verir
+            üçüncü parametre blur efekti verir yani küçük değer verilirse net görünüm büyük değer verilirse flu bir görünüm elde edilir
+            son parametre gölgenin rengini belirler */
+            text-shadow: 3px -5px 5px red;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+            box-shadow: 5px 5px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <p id="text">
+        Akın CENGİZ
+    </p>
+    <p id="a">Üzeri çizili metin</p>
+    <p id="b">Üstü çizgili Metin</p>
+    <p id="c">Altı çizgili Metin</p>
+    <p id="d">Metin Lorem, ipsum dolor.</p>
+    <p id="e">Metin</p>
+
+    <p class="paragraph letter-spacing text-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores quibusdam illo, est similique obcaecati. Nesciunt error consectetur corrupti quisquam excepturi distinctio nisi, vero neque maiores, sequi commodi. Voluptatum sequi quasi nisi rerum quidem, eligendi quod perferendis aliquid porro amet sunt! Aspernatur nihil soluta eaque nam. Quis, deleniti! Voluptates quis eius qui, a placeat dolore debitis! Voluptatem rem modi qui, a molestiae tempore magni distinctio illum, repudiandae similique quod debitis ipsam autem? Amet, dolorem deleniti.</p>
+    <p class="paragraph line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste inventore corporis odit dolores eius porro, atque est magnam! Ratione saepe, repudiandae placeat odit officiis incidunt culpa nobis impedit totam magni, maxime tempora et nemo dolorum quod aliquid vero vitae quibusdam aliquam, libero nisi. Totam quibusdam assumenda recusandae exercitationem eveniet!</p>
+    <p class="paragraph word-spacing white-space">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloribus ex aspernatur quaerat distinctio maiores pariatur dolore itaque tempora, officiis facere expedita aperiam illo odio laboriosam dicta accusantium repellat sapiente. Impedit error quasi, id ab autem dolores nesciunt porro quo maxime, ipsa consectetur eos quas suscipit vero vel placeat ratione, ut fuga illum reiciendis temporibus quia accusantium. Qui quis, numquam quibusdam incidunt non dolor deleniti mollitia consectetur. Repudiandae totam numquam amet aspernatur eligendi laborum, neque nam tempora delectus ipsam. Corrupti error esse odio excepturi officia ad architecto, molestias fugit, deleniti, inventore adipisci! Mollitia adipisci excepturi quod, dolorum ducimus aliquid quidem?</p>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Box Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        div{
+            width: 900px;
+            border: 10px solid red;
+            background-color: blue;
+            outline: #4CAF50 solid 10px;
+        }
+        #content-box{
+            background-color: gray;
+            box-sizing: content-box;
+            padding: 15px;
+        }
+
+        #border-box{
+            background-color: green;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        .a{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content-box">
+        <div class="a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, laudantium blanditiis, delectus necessitatibus tempora voluptatem aliquam quaerat asperiores, repellat consequatur sapiente. Excepturi unde repellat numquam commodi odit laboriosam cum eaque! Esse, ipsa itaque enim officiis ex consectetur totam reprehenderit unde iusto quia voluptatem architecto ipsum. Id consequatur cumque magni optio? lorem150</div>
+    </div>
+    <div id="border-box"><div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem amet unde, asperiores, eaque consequatur ea accusantium necessitatibus provident, cumque voluptate dicta! Dolores impedit dolorem iure fuga debitis ad, minima aliquam esse quos, ab voluptatem, nostrum iste quaerat deleniti nulla mollitia nemo? Esse itaque pariatur, illum, sed molestiae possimus reprehenderit molestias excepturi totam rerum magnam perspiciatis. Ad corrupti iure velit nulla, obcaecati voluptatibus quae laborum ut illo incidunt ipsa, at esse? Voluptatibus quae totam quia nihil dignissimos aspernatur, consequuntur in facilis tempore nemo tenetur repellat, vitae, rem soluta similique! Adipisci officiis, at ducimus numquam reprehenderit quisquam provident eos nobis cupiditate?</div></div>
+    <div id="content-box" style="width: 650px;">
+        <div class="a" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, laudantium blanditiis, delectus necessitatibus tempora voluptatem aliquam quaerat asperiores, repellat consequatur sapiente. Excepturi unde repellat numquam commodi odit laboriosam cum eaque! Esse, ipsa itaque enim officiis ex consectetur totam reprehenderit unde iusto quia voluptatem architecto ipsum. Id consequatur cumque magni optio? lorem150</div>
+    </div>
+    <div id="border-box" style="width: 650px;"><div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem amet unde, asperiores, eaque consequatur ea accusantium necessitatibus provident, cumque voluptate dicta! Dolores impedit dolorem iure fuga debitis ad, minima aliquam esse quos, ab voluptatem, nostrum iste quaerat deleniti nulla mollitia nemo? Esse itaque pariatur, illum, sed molestiae possimus reprehenderit molestias excepturi totam rerum magnam perspiciatis. Ad corrupti iure velit nulla, obcaecati voluptatibus quae laborum ut illo incidunt ipsa, at esse? Voluptatibus quae totam quia nihil dignissimos aspernatur, consequuntur in facilis tempore nemo tenetur repellat, vitae, rem soluta similique! Adipisci officiis, at ducimus numquam reprehenderit quisquam provident eos nobis cupiditate?</div></div>
+</body>
+</html>

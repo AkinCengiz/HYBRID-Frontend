@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Links</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      /* unvisited link */
+      a:link {
+        background-color: blue;
+        color: red;
+      }
+
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+
+      /* mouse over link */
+      a:hover {
+        background-color: red;
+        color: black;
+      }
+
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+      a:link,
+      a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a:hover,
+      a:active {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="./borders.html" target="_blank">Borders</a>
+      <a href="./colors.html" target="_blank"> Colors</a>
+      <a href="./box-sizing.html" target="_self">Box-Sizing</a>
+      <a href="./css-intro.html" target="_blank">CSS-Intro</a>
+      <a href="./background.html" target="_blank">Background</a>
+      <a href="https://www.google.com" target="_blank">Google</a>
+    </div>
+  </body>
+</html>
