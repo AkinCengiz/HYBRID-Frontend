@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Colors</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid silver;
+        }
+        /* Color Names */
+        #red{
+            background-color: red;
+        }
+        #gray{
+            background-color: rgb(150,150,150);
+        }
+        #black{
+            background-color: rgba(0,0,0,1);
+        }
+        #inline{
+            background-color: rgba(255,255,255,.5);
+        }
+        #green{
+            background-color: #00ff00;
+        }
+        #blue{
+            background-color: HSL(255, 100%, 50%);
+        }
+        #hsl{
+            background-color: HSLA(0, 100%, 50%,.0);
+        }
+    </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="gray"></div>
+    <div id="black"><div id="inline"></div></div>
+    <div id="green"></div>
+    <div id="blue"><div id="hsl"></div></div>
+</body>
+</html>

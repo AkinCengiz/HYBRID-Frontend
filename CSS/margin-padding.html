@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Margin & Padding</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        height: 250px;
+        width: 250px;
+      }
+      #green {
+        margin: 5px;
+      }
+      #blue {
+        margin-left: 15px;
+        padding: 20px;
+      }
+      #red {
+        margin-bottom: 25px;
+        padding-top: 20px ;
+      }
+      #gray {
+        margin-top: 55px;
+      }
+      #green p {
+        margin-left: 15px;
+      }
+      .box{
+        position: relative;
+        background-color: orange;
+        padding: 10px 20px 15px 20px;
+      }
+      .inlineBox{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: aqua;
+        margin: 15px 25px 30px 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="green" style="background-color: green">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem
+        accusamus neque, architecto et, dignissimos impedit sapiente vel quae
+        quis possimus. Officia fugiat modi sequi.
+      </p>
+    </div>
+    <div id="blue" style="background-color: blue">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem
+        accusamus neque, architecto et, dignissimos impedit sapiente vel quae
+        quis possimus. Officia fugiat modi sequi. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolores praesentium fuga molestiae placeat libero corrupti maiores facilis, error quibusdam ex recusandae repudiandae voluptatem culpa! Lorem ipsum dolor sit amet. 
+      </p>
+    </div>
+    <div id="red" style="background-color: red">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem
+        accusamus neque, architecto et, dignissimos impedit sapiente vel quae
+        quis possimus. Officia fugiat modi sequi.
+      </p>
+    </div>
+    <div id="gray" style="background-color: gray">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem
+        accusamus neque, architecto et, dignissimos impedit sapiente vel quae
+        quis possimus. Officia fugiat modi sequi.
+      </p>
+    </div>
+    <div class="box">
+        <div class="inlineBox"></div>
+    </div>
+  </body>
+</html>

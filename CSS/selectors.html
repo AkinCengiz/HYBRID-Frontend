@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Selectors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Element Selectors - Elementin adı ile yapılan biçimlendirme */
+        div{
+            width: 50%;
+            height: 500px;
+            border: 3px solid gray;
+            margin: 5px;
+            background-color: aqua;
+        }
+        h1{
+            background-color: black;
+            color: white;
+        }
+        p{
+            background-color: red;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid silver;
+        }
+        /* CLASS SELECTOR => Class adına göre elementleri biçimlendirir */
+        .box{
+            background-color: blueviolet;
+            width: 75%;
+        }
+        .title{
+            color: red;
+        }
+        /* ID SELECTOR => Id değerine göre elementi biçimlendirir */
+        #box-1{
+            background-color: orangered;
+        }
+        /* GROUP SELECTOR => Virgül kullanılarak verilen bütün elementleri biçimlendirir */
+        h2, h3, li{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box">
+        <h1 class="title">Başlık</h1>
+        <p>Paragraf 1 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 3 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 4 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 5 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <h2>Başlık 2</h2>
+        <h3>Başlık 3</h3>
+
+        <ul>
+            <li>Madde 1</li>
+            <li>Madde 2</li>
+            <li>Madde 3</li>
+            <li>Madde 4</li>
+            <li>Madde 5</li>
+        </ul>
+    </div>
+    <div>
+        <h1>Başlık</h1>
+        <p>Paragraf 1 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 3 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 4 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 5 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        
+        <ul>
+            <li>Madde 1</li>
+            <li>Madde 2</li>
+            <li>Madde 3</li>
+            <li>Madde 4</li>
+            <li>Madde 5</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h1>Başlık</h1>
+        <p>Paragraf 1 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 3 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 4 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        <p>Paragraf 5 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt molestias autem nulla ex obcaecati, modi rem iste quae in amet maxime sint, harum nihil?</p>
+        
+        <ul>
+            <li>Madde 1</li>
+            <li>Madde 2</li>
+            <li>Madde 3</li>
+            <li>Madde 4</li>
+            <li>Madde 5</li>
+        </ul>
+    </div>
+</body>
+</html>

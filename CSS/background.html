@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - BackGround</title>
+    <style>
+        body{
+            background-image: url("../HTML/Intro/images/images.jpg");
+            /* background-repeat => varsayılan olarak repeat değerini alır ve hem yatayda hem dikeyde sayfa boyutu kadar resmi tekrar eder
+            repeat-x => resmi x ekseninde tekrarlar (YATAYDA)
+            repeat-y => resmi y ekseninde tekrarlar (DİKEYDE)
+            no-repeat değeri alırsa resmi bir kere ekler ve tekrarlamaz            */
+            background-repeat: no-repeat;
+            /* background-position => Resmi yerleştirmek için kullanılır
+                ilk değer dikeyde ikinci değer yatayda hizalar dikeyde top,center, bottom yatayda left, center, right değerlerini alır
+            */
+            background-position: top right;
+            /* Resmin ekranda nasıl davranacağını belirler (Kaydırılıp kaydırılmayacağı, sabit olup olmayacağı gibi) 
+            fixed => resmi sabitler
+            scrool => Resmin sayfayla birlikte hareket etmesini sağlar
+            */
+            background-size: cover;
+            background-attachment: scroll;
+        }
+        div{
+            height: 100px;
+            width: 300px;
+            
+        }
+        #a{
+            background-color: green;
+            /* Opacity değeri saydamlık verir */
+            opacity: .4;
+        }
+        #b{
+            background: #ffffff url("../HTML/Intro/images.jpg") no-repeat center center;
+            background-size: cover;
+            /* background-image: url("../HTML/Intro/images.jpg"); */
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    <div id="d"></div>
+    <div id="e"></div>
+</body>
+</html>
