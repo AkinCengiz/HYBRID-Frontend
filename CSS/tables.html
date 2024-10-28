@@ -6,22 +6,33 @@
     <title>CSS - Tables</title>
     <style>
         table{
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
-            border: 1px solid silver;
+            
             border-collapse: collapse;
         }
-        tr, th, td {
+        tr:hover{
+          background-color: blue;
+          color: white;
+          cursor: pointer;
+        }
+        th, td {
             border: 1px solid silver;
             
         }
         th,td{
             padding: 10px;
         }
+        .disp-visi{
+          /* Display özelliği none yapılırsa sayfa o elementi hiç tanımlanmamış gibi görür ve yerine ondan sonra gelen elementi yerleştirir. */
+          /* display: none; */
+          /* visibility özelliği hidden yapılırsa sayfa o elementi gizler ancak gizlenen element yerinde kalır sadece görünmez. Yerine her hangi bir element geçemez. */
+          visibility: visible;
+        }
     </style>
   </head>
   <body>
-    <table>
+    <table class="disp-visi" >
       <thead>
         <tr>
           <th>#</th>
@@ -29,6 +40,7 @@
           <th>Unit Price</th>
           <th>Units In Stock</th>
           <th>Category</th>
+          <th>Deneme</th>
         </tr>
       </thead>
       <tbody>
@@ -38,6 +50,7 @@
           <td>15000</td>
           <td>5</td>
           <td>Bilgisayar</td>
+          <td>lorem150</td>
         </tr>
         <tr>
             <td>2</td>
@@ -45,8 +58,68 @@
             <td>13000</td>
             <td>5</td>
             <td>Cep Telefonu</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi quia doloribus maxime aut nam iste cumque beatae vitae, tempora veritatis voluptate voluptatum laudantium sapiente possimus officiis nulla rerum. Quis blanditiis aspernatur illo, esse minima nemo mollitia fuga doloribus nostrum magni quo eveniet ipsam soluta hic accusantium laudantium sit perferendis quasi aut incidunt. Maxime molestiae id quasi, accusantium repellendus dolore modi earum consectetur aliquid nulla animi numquam fugit quia quos quam rem consequatur perspiciatis aut. Quod accusamus eaque et illum excepturi eius placeat temporibus sequi blanditiis eos. Culpa quasi iste unde. Fugit, quasi esse sed tenetur optio laboriosam exercitationem assumenda.</td>
           </tr>
       </tbody>
     </table>
+    <div style="overflow-x: auto;">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>Adam</td>
+          <td>Johnson</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+        </tr>
+      </table>
   </body>
 </html>

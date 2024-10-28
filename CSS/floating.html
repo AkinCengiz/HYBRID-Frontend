@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Floating</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 25%;
+        height: 100px;
+        border: 1px solid black;
+        float: left;
+      }
+      #box-1 {
+        width: 50%;
+      }
+      .boxed{
+        width: 50%;
+        height: 200px;
+        background-color: grey;
+      }
+      .clear-fix{
+        overflow: auto;
+      }
+      .clear-fix::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clear-fix">
+      <div id="box-1" class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+    <div class="boxed"></div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Combinators</title>
+    <style>
+        /* Bir elementin kapsama altında olan belirtilen türdeki elementleri biçimlendirmek */
+      div p {
+        background-color: green;
+      }
+      /* Bir elementin belirtilen türdeki çocukları olan elementi biçimlendirmek (Çocuğu olan element)*/
+      section > p{
+        background-color: grey;
+      }
+      /* Belirtilen türdeki elementin kendinden sonra belirtilen türde gelen kardeş elementlerini biçimlendirir */
+      div + p {
+        background-color: red;
+      }
+      div ~ p{
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos natus
+        ducimus, dicta odit accusantium, reiciendis sint porro eius atque non
+        nobis odio, vel ipsum architecto?
+      </p>
+      <p>
+        Laboriosam, beatae recusandae! Earum, dolor nisi voluptatum rerum
+        quaerat est sapiente odit corrupti. Laudantium perspiciatis qui quam
+        amet corrupti ipsum iure enim sequi autem sunt!
+      </p>
+      <p>
+        Ipsa veniam delectus doloribus, dignissimos, magni nihil quasi corrupti
+        ullam perferendis, accusamus molestiae iste eos quam quod sequi dolor.
+        Natus vel expedita exercitationem dignissimos nam.
+      </p>
+      <header>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos natus
+          ducimus, dicta odit accusantium, reiciendis sint porro eius atque non
+          nobis odio, vel ipsum architecto?
+        </p>
+        <p>
+          Laboriosam, beatae recusandae! Earum, dolor nisi voluptatum rerum
+          quaerat est sapiente odit corrupti. Laudantium perspiciatis qui quam
+          amet corrupti ipsum iure enim sequi autem sunt!
+        </p>
+        <p>
+          Ipsa veniam delectus doloribus, dignissimos, magni nihil quasi
+          corrupti ullam perferendis, accusamus molestiae iste eos quam quod
+          sequi dolor. Natus vel expedita exercitationem dignissimos nam.
+        </p>
+      </header>
+    </div>
+    <header>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos natus
+        ducimus, dicta odit accusantium, reiciendis sint porro eius atque non
+        nobis odio, vel ipsum architecto?
+      </p>
+      <p>
+        Laboriosam, beatae recusandae! Earum, dolor nisi voluptatum rerum
+        quaerat est sapiente odit corrupti. Laudantium perspiciatis qui quam
+        amet corrupti ipsum iure enim sequi autem sunt!
+      </p>
+      <p>
+        Ipsa veniam delectus doloribus, dignissimos, magni nihil quasi corrupti
+        ullam perferendis, accusamus molestiae iste eos quam quod sequi dolor.
+        Natus vel expedita exercitationem dignissimos nam.
+      </p>
+    </header>
+    <section>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos natus
+        ducimus, dicta odit accusantium, reiciendis sint porro eius atque non
+        nobis odio, vel ipsum architecto?
+      </p>
+      <p>
+        Laboriosam, beatae recusandae! Earum, dolor nisi voluptatum rerum
+        quaerat est sapiente odit corrupti. Laudantium perspiciatis qui quam
+        amet corrupti ipsum iure enim sequi autem sunt!
+      </p>
+      <p>
+        Ipsa veniam delectus doloribus, dignissimos, magni nihil quasi corrupti
+        ullam perferendis, accusamus molestiae iste eos quam quod sequi dolor.
+        Natus vel expedita exercitationem dignissimos nam.
+      </p>
+      <article>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos natus
+          ducimus, dicta odit accusantium, reiciendis sint porro eius atque non
+          nobis odio, vel ipsum architecto?
+        </p>
+        <p>
+          Laboriosam, beatae recusandae! Earum, dolor nisi voluptatum rerum
+          quaerat est sapiente odit corrupti. Laudantium perspiciatis qui quam
+          amet corrupti ipsum iure enim sequi autem sunt!
+        </p>
+        <p>
+          Ipsa veniam delectus doloribus, dignissimos, magni nihil quasi
+          corrupti ullam perferendis, accusamus molestiae iste eos quam quod
+          sequi dolor. Natus vel expedita exercitationem dignissimos nam.
+        </p>
+      </article>
+    </section>
+    <div>Deneme Divi</div>
+    <p>Deneme divinden sonra gelen kardeş P Elementi</p>
+    <div>İkinci deneme div elementi</div>
+    <h1>Deneme Başlık</h1>
+    <p>İkinci div elementinden sonra gelen kardeş p elementi</p>
+    <div>Üçüncü deneme div elementi</div>
+    <p>Üçüncü div elementinden sonra gelen kardeş p elementi</p>
+  </body>
+</html>

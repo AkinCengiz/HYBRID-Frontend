@@ -1,0 +1,84 @@
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid silver;
+}
+#box-1{
+    background-color: red;
+    margin: 10px;
+    /* Bir elementin varsayılan position özelliği statictir. Static olan position elementinin yeri değiştirilemez */
+    position: static;
+    left: 150px;
+}
+#box-2{
+    position: relative;
+    left: 150px;
+    top:25px;
+    background-color: blue;
+}
+#box-3{
+    /* Position özelliği absolut olarak ayarlanan element sayfa akışından çıkar ve tek başına yeri verilen değerlere göre belirlenir */
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    background-color: grey;
+}
+#box-4{
+    background-color: aqua;
+}
+#box-5{
+    /* Position özelliği fixed olarak tanımlanırsa element sayfada belirtilen noktada sabit bir şekilde görünür. Sayfa yukarı aşağı sağa sola kaydırılsa bile element aynı yerde sabit bir şekilde görüntülenir. */
+    position: fixed;
+    background-color: green;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#box-6{
+    background-color: magenta;
+    position: relative;
+}
+.inbox{
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+}
+#inbox-1{
+    position: absolute;
+    background-color: black;
+    right: 0px;
+    top:0px;
+
+}
+#inbox-2{
+    background-color: white;
+}
+#relative{
+    background-color: black;
+    position: relative;
+}
+#absolute{
+    background-color: red;
+    /* Position özelliği absolute olarak belirlenen bir element konumunu kendisini kapsayan elementlerden position değeri relative olan ilk elemente göre belirler. Kapsayıcı elementlerden hiç biri relative değilse body elementine göre kendisini konumlandırır. */
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+#in-relative{
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.relative{
+    position: relative;
+}
+.sticky{
+    position: sticky;
+    bottom: 50px;
+    background-color: orangered;
+}
+#sticky{
+    background-color: pink;
+    z-index: -1;
+}
