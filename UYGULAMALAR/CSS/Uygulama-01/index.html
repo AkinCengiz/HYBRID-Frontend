@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS - First App</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            border : 1px solid black;
+            background-color: #FEC689;
+            padding: 10px;
+        }
+        .box{
+            height: 20vh;
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            font-weight: bolder;
+        }
+        #header{            
+            background-color: #A4D39D;            
+            color: #D0142D;
+        }
+        #page_title{
+            background-color: #6DCFF6;
+            color: #8F11AB;
+        }
+        #content{
+            background-color: #FEF568;
+            color: #1B38B7;
+        }
+        #footer{
+            background-color: #A286C0;
+            color: #0A20DC;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header" class="header box">HEADER</div>
+        <div id="page_title" class="page_title box">PAGE TITLE</div>
+        <div id="content" class="content box">CONTENT</div>
+        <div id="footer" class="footer box">FOOTER</div>
+    </div>
+</body>
+</html>

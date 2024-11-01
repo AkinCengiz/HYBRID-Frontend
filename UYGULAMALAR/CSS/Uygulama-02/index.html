@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .container{
+            width: 80%;
+            border: 1px solid silver;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: #dfdfdf;
+        }
+        
+        #menu{
+            width: 20%;
+            border: 1px solid silver;
+        }
+        #content{
+            width: 80%;
+            border: 1px solid silver;
+        }
+        /* FLEX MODEL */
+        .flex-column{
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+        }
+        #profile-image{
+            width: 50%;
+            height: auto;
+
+        }
+        #menu-list{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        .menu-list-item{
+            padding: 8px 16px;
+        }
+        .menu-list-item i{
+            margin-right: 16px;
+        }
+        #social-accounts{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex-row">
+        <div id="menu" class="flex-column">
+            <div id="menu-header">
+                <img id="profile-image" src="./images/avatar_g2.jpg" alt="Profile image">
+                <h2>PORTFOLIO</h2>
+                <p>Template by W3.CSS</p>
+            </div>            
+            <ul id="menu-list">
+                <li class="menu-list-item"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</li>
+                <li class="menu-list-item"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</li>
+                <li class="menu-list-item"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</li>
+            </ul>
+            <ul id="social-acconts" class="flex-row">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-snapchat"></i></li>
+                <li><i class="fa-brands fa-pinterest"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+        </div>
+        <div id="content">CONTENT</div>
+    </div>
+</body>
+</html>

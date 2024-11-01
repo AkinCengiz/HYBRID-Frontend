@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Flex Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Flex modeli esnek kutu modelidir ve elementleri kolay bir şekilde yerleştirmemize olanak sağlar. */
+        /* flex-direction => Kapsayıcı element içerisindeki elementlerin (çocuğu olan elementler) satır ya da sütun olarak yerleştirilmesini sağlar
+        flex-direction:row => elementleri satır biçiminde yan yana yerleştirir
+        flex-direction:column => elementleri sütun biçiminde alt alta yerleştirir
+        flex-direction:row => elementleri satır biçiminde yan yana yerleştirir
+        flex-direction:column => elementleri sütun biçiminde alt alta yerleştirir
+        */
+
+
+        /* 
+        FLEX-FLOW
+        Flex-direction ve filex-wrap özelliklerini bir arada kullanmamızı sağlar
+        */
+
+        /* 
+        JUSTIFY-CONTENT & ALIGN-ITEMS
+        Flex-direction row ise justify-content elementlerin yatay yerleşimini ayarlar align-items dikeyde elementlerin yerleşimini ayarlar
+        Flex-direction column ise justify-content elementlerin yatay yerleşimini ayarlar align-items dikeyde elementlerin yerleşimini ayarlar
+        */
+        .container{
+            width: 100%;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap; */
+            flex-flow: row wrap;
+
+
+        }
+        div{
+            width: 20%;
+            border: 1px solid red;
+        }
+        #main-box{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+
+            height: 600px;
+            
+            border: 3px solid black;
+            /* Justify-Content */
+            /* 
+            Start   : Elementleri en solda hizalar
+            End     : Elementleri en sağda hizalar
+            center  : Elementleri ortada hizalar
+            space-around    : Elementleri aralarında boşluk olacak şekilde yayar en sol ve en sağ boşluk genişliği aralardaki boşluk genişliğinin yarısıdır.
+            space-between   : Elementlerden ilk elementi sola yaslar son elementi sağa yaslar diğer elementleri aralarında eşit boşluk olacak şekilde satıra hizalar.
+            space-evenly    : Space-around yapısına benzer ancak en sol ve en sağdaki boşluk ile elementler arasındaki boşluk eşittir.
+            */
+            justify-content: space-between;
+            /* ALIGN-ITEMS */
+            /* 
+            start   : Elementleri dikeyde en üste hizalar
+            center  : Elementleri dikeyde ortada hizalar
+            end     : Elementleri dikeyde en altta hizalar
+            */
+            /* align-items: start; */
+            /* align-content: center; */
+            
+        }
+        .box{
+            /* height: 100px; */
+            width: 100px;
+            border: 5px solid grey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div >1-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >2-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >3-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >4-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >5-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >6-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Son - 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Son-1 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        <div >Son - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis eos harum rerum, suscipit odio?</div>      
+        
+    </div>
+
+    <div id="main-box" class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+</html>
