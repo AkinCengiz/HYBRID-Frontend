@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #works{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+            padding: 16px;
+            background-color: #333333;
+            color: white;
+        }
+        .work-card{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            justify-content: start;
+            align-items: flex-start;
+            background-color: white;
+            color: #333333;
+            margin: 10px;
+        }
+
+        #work-text{
+            background-color: #333333;
+            color: white;
+        }
+        .work-card img{
+            width: 100%;
+        }
+        .card-text{
+            padding: 10px;
+        }
+        .card-text h3, .card-text h4, .card-text ul{
+            margin-bottom: 10px;
+        }
+        #work-list{
+            list-style-type: none;
+        }
+        .work-list-item{
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div id="logo"><i class="fa-solid fa-house"></i> Logo</div>
+            <nav id="header-nav">                
+                <ul id="nav-list">
+                    <li class="nav-list-item">Team</li>
+                    <li class="nav-list-item">Work</li>
+                    <li class="nav-list-item">Price</li>
+                    <li class="nav-list-item">Contact</li>
+                </ul>             
+                <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </nav>
+        </header>
+        <section id="page-image">
+            <img src="./images/sailboat.jpg" alt="Sailboat">
+        </section>
+        <section id="team">
+            <h2>OUR TEAM</h2>
+            <p>Meet the team - our office rats:</p>
+            <div id="team-cards">
+                <div class="card">
+                    <img src="./images/avatar.jpg" alt="avatar">
+                    <h3>Johnny Walker</h3>
+                    <p>Web Designer</p>
+                </div>
+                <div class="card">
+                    <img src="./images/avatar.jpg" alt="avatar">
+                    <h3>Rebecca Flex</h3>
+                    <p>Support</p>
+                </div>
+                <div class="card">
+                    <img src="./images/avatar.jpg" alt="avatar">
+                    <h3>Jan Ringo</h3>
+                    <p>Boss man</p>
+                </div>
+                <div class="card">
+                    <img src="./images/avatar.jpg" alt="avatar">
+                    <h3>Kai Ringo</h3>
+                    <p>Fixer</p>
+                </div>
+            </div>
+        </section>
+        <section id="works">
+            <div id="work-text" class="work-card">
+                <h2>Our Work</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="work-card">
+                <img src="./images/snow.jpg" alt="Snow">
+                <div class="card-text">
+                    <h3>Customer 1</h3>
+                    <h4>Trade</h4>
+                    <ul id="work-list">
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                    </ul>   
+                </div>
+                
+            </div>
+            <div class="work-card">
+                <img src="./images/lights.jpg" alt="Light">
+                <div class="card-text">
+                    <h3>Customer 2</h3>
+                    <h4>Trade</h4>
+                    <ul id="work-list">
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="work-card">
+                <img src="./images/mountains.jpg" alt="mountains">
+                <div class="card-text">
+                    <h3>Customer 3</h3>
+                    <h4>Trade</h4>
+                    <ul id="work-list">
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                        <li class="work-list-item">Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+</body>
+</html>

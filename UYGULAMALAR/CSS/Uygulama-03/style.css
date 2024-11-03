@@ -1,0 +1,98 @@
+/* GLOBALS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+}
+
+/* HEADER */
+#header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#logo{
+    padding: 10px;
+    background-color: #009688;
+    color: white;
+    width: 10%;
+}
+#logo i{
+    margin-right: 5px;
+}
+#header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    color: white;
+    width: 90%;
+    padding: 5px;
+}
+#nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: start;
+    align-items: center;
+}
+.nav-list-item{
+    padding: 3px;
+}
+
+/* PAGE_IMAGE */
+#page-image{
+    min-height: 500px;
+    max-height: 600px;
+    /* background-image: url("./images/sailboat.jpg"); */
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#page-image img{
+    vertical-align: middle;
+    min-height: 350px;
+    max-height: 600px;
+    width: 100%;
+}
+
+/* TEAMS */
+#team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#team h2{
+    margin: 16px auto;
+}
+#team p{
+    margin: 16px auto;
+}
+#team-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+    width: 20%;
+
+}
+.card img{
+    width: 70%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
