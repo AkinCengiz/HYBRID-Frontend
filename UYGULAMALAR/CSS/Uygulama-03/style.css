@@ -44,6 +44,23 @@
 .nav-list-item{
     padding: 3px;
 }
+.nav-list-item a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list-item a:visited{
+    color: white;
+}
+.nav-list-item a:visited{
+    color: grey;
+}
+.nav-list-item a:hover{
+    color: white;
+    background-color: grey;
+}
+#search{
+    margin-right: 6px;
+}
 
 /* PAGE_IMAGE */
 #page-image{
@@ -69,10 +86,10 @@
     align-items: center;
     padding: 50px;
 }
-#team h2{
+#team h2, #pricing h2{
     margin: 16px auto;
 }
-#team p{
+#team p,#pricing p{
     margin: 16px auto;
 }
 #team-cards{
@@ -96,3 +113,198 @@
     border-radius: 50%;
     margin-bottom: 16px;
 }
+
+/* WORKS SECTION */
+#works{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 16px;
+    background-color: #333333;
+    color: white;
+}
+.work-card{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: white;
+    color: #333333;
+    margin: 10px;
+}
+
+#work-text{
+    background-color: #333333;
+    color: white;
+}
+.work-card img{
+    width: 100%;
+}
+.card-text{
+    padding: 10px;
+}
+.card-text h3, .card-text h4, .card-text ul{
+    margin-bottom: 10px;
+}
+#work-list{
+    list-style-type: none;
+}
+.work-list-item{
+    padding-bottom: 10px;
+}
+
+/* PRICING SECTION */
+#pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+#products{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+    border: 1px solid silver;
+    margin: 0 16px;
+}
+.product:hover{
+    box-shadow: 3px 3px 3px red, -3px -3px 3px grey,3px -3px 3px grey,-3px 3px 3px grey;
+}
+.product h3, .product p, .product div{
+    margin-bottom: 16px;
+}
+.product div:last-child{
+    margin-bottom: 0;
+}
+.product h3{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.product ul{
+    list-style-type: none;
+    width: 100%;
+}
+.product ul li{
+    padding: 16px;
+    border-bottom: 1px solid silver;
+    text-align: center;
+    width: 100%;
+}
+#pro h3{
+    background-color: grey;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.price p{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.button-box{
+    width: 100%;
+    padding: 16px;
+    background-color: #F0F0F0;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+.sign-up{
+    padding: 16px;
+    background-color: #009688;
+    color: white;
+    border: 1px solid #009688;
+}
+
+ /* CONTACT SECTION */
+ #contact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+#contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+}
+#contact-header{
+    border-bottom: 5px solid #009688;
+    margin-bottom: 16px;
+}
+#contact-title, #contact-text{
+    margin-bottom: 16px;
+}
+#contact-list{
+    list-style-type: none;
+}
+.contact-list-item{
+    padding: 16px 0;
+}
+.contact-list-item i{
+    color: #009688;
+    margin-right: 16px;
+}
+#contact-form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    background-color: white;
+    padding: 16px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.form-control input{
+    padding: 6px;
+    margin-top: 6px;
+    border: none;
+    border-bottom: 1px solid silver;
+}
+#button-check{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#send-button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+/* MAP SECTION */
+#map{
+    width: 100%;
+    height: auto;
+    background-color: black;
+   }
+   #map img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+   }

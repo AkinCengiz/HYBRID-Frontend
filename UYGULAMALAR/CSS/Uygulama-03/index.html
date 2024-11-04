@@ -7,45 +7,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <style>
-        #works{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: start;
-            padding: 16px;
-            background-color: #333333;
-            color: white;
-        }
-        .work-card{
-            display: flex;
-            flex-direction: column;
-            width: 25%;
-            justify-content: start;
-            align-items: flex-start;
-            background-color: white;
-            color: #333333;
-            margin: 10px;
-        }
-
-        #work-text{
-            background-color: #333333;
-            color: white;
-        }
-        .work-card img{
-            width: 100%;
-        }
-        .card-text{
-            padding: 10px;
-        }
-        .card-text h3, .card-text h4, .card-text ul{
-            margin-bottom: 10px;
-        }
-        #work-list{
-            list-style-type: none;
-        }
-        .work-list-item{
-            padding-bottom: 10px;
-        }
+       #footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding: 16px;
+        margin: 0;
+       }
+       #footer ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+       }
+       #footer ul li{
+        padding: 10px;
+        margin: 16px 3px;
+        background-color: #009688;
+        color: white;
+       }
     </style>
 </head>
 <body>
@@ -54,10 +38,10 @@
             <div id="logo"><i class="fa-solid fa-house"></i> Logo</div>
             <nav id="header-nav">                
                 <ul id="nav-list">
-                    <li class="nav-list-item">Team</li>
-                    <li class="nav-list-item">Work</li>
-                    <li class="nav-list-item">Price</li>
-                    <li class="nav-list-item">Contact</li>
+                    <li class="nav-list-item"><a href="#team">Team</a></li>
+                    <li class="nav-list-item"><a href="#works">Work</a></li>
+                    <li class="nav-list-item"><a href="#pricing">Price</a></li>
+                    <li class="nav-list-item"><a href="#contact">Contact</a></li>
                 </ul>             
                 <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
             </nav>
@@ -139,6 +123,106 @@
                 
             </div>
         </section>
+        <section id="pricing">
+            <h2>PRICING</h2>
+            <p>Choose a pricing plan that fits your needs.</p>
+            <div id="products">
+                <div class="product">
+                    <h3>BASIC</h3>
+                    <ul>
+                        <li>10GB Storage</li>
+                        <li>10 Emails</li>
+                        <li>10 Domains</li>
+                        <li>Endless Support</li>
+                    </ul>
+                    <div class="price">
+                        <p>$ 10</p>
+                        <span>per month</span>
+                    </div>
+                    <div class="button-box">
+                        <button class="sign-up">Sign Up</button>
+                    </div>
+                </div>
+                <div id="pro" class="product">
+                    <h3>PRO</h3>
+                    <ul>
+                        <li>10GB Storage</li>
+                        <li>10 Emails</li>
+                        <li>10 Domains</li>
+                        <li>Endless Support</li>
+                    </ul>
+                    <div class="price">
+                        <p>$ 10</p>
+                        <span>per month</span>
+                    </div>
+                    <div class="button-box">
+                        <button class="sign-up">Sign Up</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>PREMIUM</h3>
+                    <ul>
+                        <li>10GB Storage</li>
+                        <li>10 Emails</li>
+                        <li>10 Domains</li>
+                        <li>Endless Support</li>
+                    </ul>
+                    <div class="price">
+                        <p>$ 10</p>
+                        <span>per month</span>
+                    </div>
+                    <div class="button-box">
+                        <button class="sign-up">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div id="contact-info">
+                <h2 id="contact-header">Contact Us</h2>
+                <h3 id="contact-title">Address</h3>
+                <p id="contact-text">Swing by for a cup of coffee, or whatever.</p>
+                <ul id="contact-list">
+                    <li class="contact-list-item"><i class="fa-solid fa-location-dot fa-shake"></i> Chicago, US</li>
+                    <li class="contact-list-item"><i class="fa-solid fa-phone fa-beat"></i> +00 1515151515</li>
+                    <li class="contact-list-item"><i class="fa-solid fa-envelope fa-bounce"></i> test@test.com</li>
+                </ul>
+            </div>
+            <form id="contact-form">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" placeholder="Input message">
+                </div>
+                <div id="button-check" class="form-control">
+                    <div>
+                        <input type="checkbox" value="I Like it!" checked> <label for="">I Like it!</label>
+                    </div>
+                    <input id="send-button" type="submit" value="Send">
+                </div>
+            </form>          
+        </section>
+        <section id="map">
+            <img src="./images/map.jpg" alt="map">
+        </section>
+        <footer id="footer">
+            <h2>Follow Us</h2>
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-google-plus-g"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+            <span>Powered by w3.css</span>
+        </footer>
     </div>
 </body>
 </html>
