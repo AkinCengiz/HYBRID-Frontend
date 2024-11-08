@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Row & Col</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md bg-success">1</div>
+            <div class="col-md bg-info">2</div>
+            <div class="col-lg bg-success">1</div>
+            <div class="col-lg bg-info">2</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2 bg-primary">2</div>
+            <div class="col-4 bg-success">4</div>
+            <div class="col-3 bg-warning">3</div>
+            <div class="col-3 bg-secondary">3</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6 col-md bg-primary">1</div>
+            <div class="col-sm-6 col-md bg-success">2</div>
+            <div class="col-sm-6 col-md bg-warning">3</div>
+            <div class="col-sm-6 col-md bg-secondary">4</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2 bg-dark">1</div>
+            <div class="col-10 bg-info">
+                <div class="row">
+                    <div class="col-4" style="border: 1px solid red;">1</div>
+                    <div class="col-2" style="border: 1px solid red;">2</div>
+                    <div class="col-2" style="border: 1px solid red;">3</div>
+                    <div class="col-4" style="border: 1px solid red;">4</div>
+                    <!-- <div class="col" style="border: 1px solid red;">5</div>
+                    <div class="col" style="border: 1px solid red;">6</div>
+                    <div class="col" style="border: 1px solid red;">7</div>
+                    <div class="col" style="border: 1px solid red;">8</div>
+                    <div class="col" style="border: 1px solid red;">9</div>
+                    <div class="col" style="border: 1px solid red;">10</div>
+                    <div class="col" style="border: 1px solid red;">11</div>
+                    <div class="col" style="border: 1px solid red;">12</div> -->
+                </div>
+            </div>
+        </div>
+        <hr><hr>
+        <div class="row px-4">
+            <div class="col-sm-6 col-md-4 col-lg bg-primary p-4"><p>1</p></div>
+            <div class="col-sm-6 col-md-4 col-lg bg-secondary"><p>1</p></div>
+            <div class="col-sm-12 col-md-4 col-lg bg-success"><p>1</p></div>
+            <div class="col-sm-12 col-md col-lg bg-warning"><p>1</p></div>
+        </div>
+
+            <div class="row gx-5 text-center">
+                <div class="col-2 bg-primary"><div class="p-3">1</div></div>
+                <div class="col-2 bg-succes"><div class="p-3">1</div></div>
+                <div class="col-2 bg-info"><div class="p-3">1</div></div>
+                <div class="col-2 bg-warning"><div class="p-3">1</div></div>
+            </div>
+    </div>
+</body>
+</html>
