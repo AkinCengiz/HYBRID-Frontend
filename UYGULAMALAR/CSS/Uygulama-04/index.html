@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap - App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+        h3 span{
+            border-bottom: 7px solid red;
+        }
+        #team{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .team-card{
+            width: 33%;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-3 bg-danger">
+          <ul class="list-group list-group-flush bg-danger">
+            <li class="list-group-item bg-danger">An item</li>
+            <li class="list-group-item bg-danger">A second item</li>
+            <li class="list-group-item bg-danger">A third item</li>
+            <li class="list-group-item bg-danger">A fourth item</li>
+            <li class="list-group-item bg-danger">And a fifth one</li>
+          </ul>
+        </nav>
+        <main class="col-9 bg-light">
+            <section id="showcase" class="row mb-5">
+                <h2>Interior Design</h2>
+                <h3 class="h1 pb-3"><span class="text-danger ">Showcase.</span></h3>
+                <div class="col-6 mb-2">
+                    <img src="./images/kitchenconcrete.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="./images/atrium.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="./images/livingroom.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="./images/bedroom.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="./images/diningroom.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="./images/livingroom2.jpg" class="img-fluid" alt="...">
+                </div>
+            </section>
+            <section class="row mb-5" id="services">
+                <h3  class="h1 pb-2"><span class="text-danger">Services.</span></h3>
+                <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+                <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+            <section id="desingner" class="row mb-5">
+                <h3  class="h1 pb-2"><span class="text-danger">Designer.</span></h3>
+                <p>The best team in the world.</p>
+                <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h6 class="h6">Our designers are thoughtfully chosen:</h6>
+                <div id="team">
+                    <div class="card team-card">
+                        <img src="./images/team2.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                        <p class="text-body-secondary" >CEO & Founder</p>
+                        <p class="card-text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card team-card">
+                        <img src="./images/team1.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Jane Doe</h4>
+                        <p class="text-body-secondary" >Designer</p>
+                        <p class="card-text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                    <div class="card team-card">
+                        <img src="./images/team3.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Mike Ross</h4>
+                        <p class="text-body-secondary" >Architect</p>
+                        <p class="card-text">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
