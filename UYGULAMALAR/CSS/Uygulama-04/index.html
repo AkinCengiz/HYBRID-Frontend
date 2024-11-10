@@ -18,17 +18,26 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            width: 100%;
         }
         .team-card{
             width: 33%;
 
+        }
+        @media screen and (max-width:768px) {
+            #team{
+                flex-wrap: wrap;
+            }
+            .team-card{
+                width: 100%;
+            }
         }
     </style>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <nav class="col-3 bg-danger">
+        <nav class="col-lg-3 bg-danger">
           <ul class="list-group list-group-flush bg-danger">
             <li class="list-group-item bg-danger">An item</li>
             <li class="list-group-item bg-danger">A second item</li>
@@ -37,7 +46,7 @@
             <li class="list-group-item bg-danger">And a fifth one</li>
           </ul>
         </nav>
-        <main class="col-9 bg-light">
+        <main class="col-lg-9 bg-light">
             <section id="showcase" class="row mb-5">
                 <h2>Interior Design</h2>
                 <h3 class="h1 pb-3"><span class="text-danger ">Showcase.</span></h3>

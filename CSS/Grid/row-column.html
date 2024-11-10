@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Grid - Row & Column</title>
+    <style>
+        .container{
+            display: grid;
+            /* display: inline-grid; */
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: repeat(3,300px); */
+            /* grid-template-columns: 20% auto 300px; */
+            /* grid-template-columns: repeat(5,auto); */
+            /* grid-template-columns: 3fr 4fr 2fr 5fr; */
+            /* grid-template-columns: 5fr 2fr 7fr; */
+            grid-template-columns: 3fr 7fr 2fr;
+
+
+        }
+        .box{
+            border: 1px solid silver;
+            background-color: green;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+</body>
+</html>

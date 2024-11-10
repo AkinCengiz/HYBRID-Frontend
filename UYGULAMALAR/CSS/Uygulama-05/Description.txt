@@ -1,0 +1,14 @@
+Değişken tanımlama
+General Css - Main Css
+Mobile Css
+
+
+Ölçülendirme => rem, em, %, px
+
+efect => transition & transform
+
+
+button - outline-button
+gradients
+slider
+

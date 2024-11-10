@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Grid & Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 3fr 7fr 2fr;
+            grid-template-areas: "header header header"
+                                 "left-sidebar content box-1"
+                                 "left-sidebar aside box-1"
+                                 "left-sidebar box-2 box"
+                                 "footer footer footer";
+        }
+        .header{
+            grid-area: header;
+            background-color: blue;
+        }
+        .content{
+            grid-area: content;
+            background-color: green;
+        }
+        .sidebar{
+            grid-area: left-sidebar;
+            background-color: red;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: aqua;
+        }
+        .aside{
+            grid-area: aside;
+            background-color: grey;
+        }
+        .box{
+            grid-area: box;
+            background-color: orange;
+        }
+        .box-2{
+            grid-area: box-2;
+            background-color: purple;
+        }
+        .box-1{
+            background-color: black;
+            grid-area: box-1;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>HEADER</h1>
+        </header>
+        <section class="content">
+            <h1>CONTENT</h1>
+        </section>
+        <section class="sidebar">
+            <h1>Sidebar</h1>
+        </section>
+        <footer class="footer">
+            <h1>Footer</h1>
+        </footer>
+        <aside class="aside">
+            <h1>Aside</h1>
+        </aside>
+        <div class="box">
+            <h1>Box</h1>
+        </div>
+        <div class="box-2">
+            <h1>Box-2</h1>
+        </div>
+        <div class="box-1">
+            <h1>Box-1</h1>
+        </div>
+    </div>
+</body>
+</html>
