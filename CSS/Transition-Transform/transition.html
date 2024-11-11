@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Transition</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        #red{
+            background-color: red;
+            color:white;
+            transition: all 4s ease-out 1s;
+        }
+        #grey{
+            background-color: gray;
+            color :black;
+            transition: all 4s ease-in 2s;
+          
+        }
+        #blue{
+            background-color: blue;
+            color :black;
+            transition: all 4s ease-in-out 2s;
+          
+        }
+        #orange{
+            background-color: orange;
+            color :black;
+            transition: all 4s linear 1s;
+          
+        }
+        #red:hover, #grey:hover, #orange:hover, #blue:hover{
+            background-color: black;
+            color:  green;
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="grey">
+        GREY
+    </div>
+    <div class="box" id="red">
+        RED
+    </div>
+    <div class="box" id="blue">
+        BLUE
+    </div>
+    <div class="box" id="orange">
+        ORANGE
+    </div>
+</body>
+</html>

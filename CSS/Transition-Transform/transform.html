@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Transform</title>
+    <style>
+        .container{
+
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            transition: all 2s ease;
+        }
+        .box:hover{
+            /* transform: rotate(90deg); Elementi verilen derece kadar döndürür */
+            /* transform: translateY(-50px); Y Ekseninde hareket ettirmek için kullanılır. - değer yukarı + değer aşağı kaydırır. */
+            /* transform : translateX(100px); X Ekseninde hareket ettirmek için kullanılır. - değer sola + değer sağa kaydırır. */
+            /* transform: translate(200px,50px); İlk değer x ekseninde kaydırır, 2. değer y ekseninde kaydırır. */
+            /* transform: scale(1.2, 1.2);İlk değer x ekseninde sağa ve sola doğru verilen değer oranında genişletir ya da daraltır, ikinci değer y ekseninde yukarı ve aşağı doğru verilen değer oranında gnişletir ya da daraltır */
+            /* transform: scale(0.8,0.8);  1 den büyük bir değerse genişler küçük bir değerse daralır*/
+            /* transform: scaleX(1.5); genişliği (x ekseni) verilen oran kadar genişletir ya da daraltır  */
+            /* transform: scaleY(1.5); yüksekliği (7 ekseni) verilen oran kadar yükseltir ya da alçaltır  */
+            /* transform: scaleX(1.5); genişliği (x ekseni) verilen oran kadar genişletir ya da daraltır  */
+            /* transform: scaleZ(2); */
+            /* transform: skewX(20deg); alt ve üst kenarlar x ekseninde verilen derece kadar sol alt köşedeki açıyı genişletir sağ alt köşedeki açıyı daraltır. Paralel kenar görüntüsü elde edilir. Negatif değerlerde tam tersi şekilde hareket eder. */
+            /* transform: skewY(20deg); sağ ve sol kenarlar y ekseninde kaydırılır sağ üst açı genişler sol üst açı daralır. Negatif değerlerde tam tersi şekilde hareket eder.*/
+            /* transform: matrix(scaleX,skewY, skewX, scaleY, translateX, translateY); */
+            /* transform: matrix(1.5, 1, 1, 1.5, -100, 0); Yukarıdaki etkileriin hepsini tek seferde vermemizi sağlar*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

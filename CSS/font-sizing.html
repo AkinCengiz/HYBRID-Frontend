@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Font-Size</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 16px;
+        }
+        .box{
+            width: 100%;
+            border: 1px solid silver;
+        }
+        #px{
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        #rem{
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        #em{
+            font-size: 1.5rem;
+        }
+        #em p{
+            font-size: 1em;
+        }
+        #percent{
+            font-size : 50%
+        }
+        @media screen and (max-width: 786px){
+            html{
+                font-size: 12px;
+            }
+            #px{
+                /* font-size: 10px; */
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="px">
+            <h2>PX</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugit nam veritatis distinctio earum animi, odit praesentium autem, vitae quia quam necessitatibus reiciendis et ipsum dolorem optio hic eum aperiam reprehenderit nulla accusamus? Nemo, aperiam nesciunt nostrum vero deleniti libero neque cum debitis modi expedita nam provident, consequuntur, excepturi rerum.</p>
+        </div>
+        <div class="box" id="rem">
+            <h2>REM</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore suscipit provident, eum perferendis laboriosam libero dignissimos odio quaerat dicta ducimus commodi cupiditate perspiciatis minus ullam, molestias quas veritatis iure alias repudiandae nisi sunt optio? Nesciunt voluptas optio fuga rerum ullam rem ipsam quae molestiae repellendus! Accusamus sunt hic sit consequatur!</p>
+        </div>
+        <div class="box" id="em">
+            <h2>EM</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, unde neque. Adipisci eligendi accusantium illum impedit nemo. Enim natus, unde perferendis iusto, nisi voluptatum autem eius quia aut asperiores repellendus rem? Iure doloremque quam quo. Assumenda praesentium amet ratione explicabo error ullam excepturi deleniti minima sunt fugiat! Libero, eveniet architecto!</p>
+        </div>
+        <div class="box" id="percent">
+            <h2>%</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, unde neque. Adipisci eligendi accusantium illum impedit nemo. Enim natus, unde perferendis iusto, nisi voluptatum autem eius quia aut asperiores repellendus rem? Iure doloremque quam quo. Assumenda praesentium amet ratione explicabo error ullam excepturi deleniti minima sunt fugiat! Libero, eveniet architecto!</p>
+        </div>
+    </div>
+</body>
+</html>
