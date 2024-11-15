@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        /* .box:first-child{
+            background-color: black;
+            color: white;
+        }
+        .box:nth-child(2n){
+            background-color: red;
+            color: white;
+        }
+        .box:nth-child(even){
+            background-color: black;
+            color: red;
+        }
+        .box:nth-child(2n){
+            background-color: red;
+            color: white;
+        }
+        .box:nth-child(odd){
+            background-color: aqua;
+            color: black;
+        } */
+         /* .box:nth-child(3n){
+            border: 1px solid silver;
+            background-color: black;
+            color: white;
+         } */
+          .box:last-child{
+            background-color: green;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+    </div>
+    <div id="about">
+        <div class="box" id="box6">1</div>
+        <div class="box" id="box5">2</div>
+        <div class="box" id="box4">3</div>
+        <div class="box" id="box3">4</div>
+        <div class="box" id="box2">5</div>
+        <div class="box" id="box1">6</div>
+    </div>
+    <div id="contact">
+        <div class="box" id="box3">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box1">3</div>
+        <div class="box" id="box6">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box4">6</div>
+    </div>
+    <div id="nav">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+    </div>
+</body>
+</html>

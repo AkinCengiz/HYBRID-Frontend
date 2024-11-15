@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     font-size: 12px;
 }
@@ -23,7 +24,7 @@ html{
 h2{
     padding-bottom: 5px;
 }
-h2.border-first{    
+h2.border-first{
     border-bottom: 3px solid #F8FCFF;
 }
 h2.border-second{
@@ -81,17 +82,27 @@ h2.border-second{
     justify-content: center;
     padding: 16px 0;
 }
+.caption{
+    background-color: #1ABC9C;
+    width: 30%;
+    margin: 16px 0;
+    border-radius: 5px;
+}
+.caption img{
+    width: 100%;
+    border-radius: 5px;
+    transition: all 1s;
+}
+.caption img:hover{
+    opacity: .2;
+}
 #image-list{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
 }
-#image-list img{
-width: 30%;
-margin: 16px 0;
-border-radius: 5px;
-}
+
 /* ABOUT */
 #about{
     display: flex;
@@ -113,3 +124,64 @@ border-radius: 5px;
     width: 25%;
     font-size: .8rem;
    }
+
+   /* CONTACT */
+   #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8FCFF;
+    color: #2C3E50;
+    padding: 16px 0;
+    width: 100%;
+   }
+   #contact-form{
+        width: 40%;
+   }
+   #contact-form input, #contact-form textarea{
+    border: none;
+   }
+   .form-floating{
+    border-bottom: .5px solid silver;
+   }
+
+   /* FOOTER */
+   #footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .footer-box{
+    padding: 16px;        
+    width: 33%;
+    text-align: center;
+  }
+  .footer-box h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  .footer-box p{
+    font-size: .6rem;
+    margin-bottom: 0;
+  }
+  #social-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F8FCFF;
+    padding: 0.5rem 1rem;
+    border-radius: 100%;
+    font-size: 1rem;
+  }
+  
+  .social-item:hover{
+    color: #2C3E50;
+    background-color: #F8FCFF;
+  }
