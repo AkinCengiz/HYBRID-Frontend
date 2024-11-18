@@ -87,3 +87,25 @@ stringCities = marmara.join(" - ");
 console.log(stringCities);
 stringCities = marmara.join();
 console.log(stringCities);
+
+
+//sort() => Dizinin elemanlarını sıralamak için kullanılır.
+const numbersTwo = [5,7,1,8,3,11,27,34,43,4,6,2,23,51,68];
+console.log(numbersTwo.sort());
+const citiesTwo = ["Sinop","Siirt","Sakarya","Sivas","Samsun"];
+console.log(citiesTwo.sort());
+
+
+
+console.log(numbersTwo.sort());
+console.log(numbersTwo.sort(function(small,big){
+    return small - big;
+}));
+console.log(numbersTwo.sort(function(small,big){
+    return big - small;
+}));
+console.log(numbersTwo.sort(function(a,b){
+    return a - b;
+}));
+
+console.log(numbersTwo.sort((small,big) => big - small));
