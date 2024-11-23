@@ -68,3 +68,14 @@ console.log(Math.random());
 
 result = Math.ceil(Math.random()*100);
 console.log(`1 - 100 arası rastgele sayı değeri : ${result}`);
+console.log("Deneme " + Math.ceil(Math.random()*100))
+//alert("Deneme " + Math.ceil(Math.random()*100))
+const body = document.getElementById("body");
+body.innerHTML = Math.ceil(Math.random()*100);
+
+
+function betweenOneAndHundred(){
+    return Math.ceil(Math.random()*100);
+}
+
+console.log("Kendi fonksiyonum : " + betweenOneAndHundred());

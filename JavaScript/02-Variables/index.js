@@ -1,4 +1,5 @@
-
+console.log("1. satır : ", firstname);
+//console.log("2. satır : ", age);
 //var anahtarıyla değişken tanımlanmaktadır.
 var firstname = "Akın";
 var lastname = "Cengiz";
