@@ -80,8 +80,24 @@ function getHosting(email){
 
     return email.slice(email.search("@") + 1);
 }
+
+const getArrowHosting = (email) => {
+    return email.slice(email.search("@") + 1);
+}
+
+const getArrowHosting2 = email => {
+    return email.slice(email.search("@") + 1);
+}
+const arrowDeneme = () => "Deneme";
+
+
+
 console.log("**********",email)
 console.log(getHosting(email));
+
+console.log("Arrow Metot : ", getArrowHosting("akincengiz@msn.com"))
+
+
 
 
 //RECURSIVE FUNCTION
@@ -97,3 +113,10 @@ function factorial(number){
 let result = factorial(3);
 console.log("Factorial : ", result);
 
+const multiplyNumber = (number1, number2) => number1 * number2;
+
+console.log("Multiply : ", multiplyNumber(3,7))
+
+console.log((() => {
+    return 2 + 5;
+})());
