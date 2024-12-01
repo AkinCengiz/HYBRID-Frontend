@@ -17,18 +17,18 @@ const ulElement = document.querySelector(".card-body>ul.list-group");
 
 clearButton.addEventListener("click", () => {
     //local stprage üzerindeki tüm key-value çiftleri silinir...
-    //localStorage.clear();
+    //sessionStorage.clear();
     //local storage üzerinde sadece parametre olarak verilen key değerine ait kayır silinir
-    localStorage.removeItem("experiences");
+    sessionStorage.removeItem("experiences");
     createList();
 })
 
 addButton.addEventListener("click", () => {
     let value = inputElement.value;
-    if(localStorage.getItem("experiences") === null){
+    if(sessionStorage.getItem("experiences") === null){
         experiences = [];
     }else{
-        experiences = JSON.parse(localStorage.getItem("experiences"));
+        experiences = JSON.parse(sessionStorage.getItem("experiences"));
     }
     if(experiences.includes(value)){
         alert("Girilen değer daha önce tanımlanmış...");
@@ -36,7 +36,7 @@ addButton.addEventListener("click", () => {
         experiences.push(value);
     }
 
-    localStorage.setItem("experiences",JSON.stringify(experiences));
+    sessionStorage.setItem("experiences",JSON.stringify(experiences));
     inputElement.value = "";
     inputElement.focus();
     createList();
@@ -44,7 +44,7 @@ addButton.addEventListener("click", () => {
 
 
 const createList = () => {
-    let newList = JSON.parse(localStorage.getItem("experiences"));
+    let newList = JSON.parse(sessionStorage.getItem("experiences"));
     ulElement.innerHTML = "";
     newList.forEach((element) => {
         const liElement = document.createElement("li");
@@ -59,13 +59,14 @@ const createList = () => {
 createList();
 
 deleteButton.addEventListener("click",() => {
-    const newList = JSON.parse(localStorage.getItem("experiences"));
+    const newList = JSON.parse(sessionStorage.getItem("experiences"));
+    //console.log(newList);
     newList.forEach((item,index) => {
         if(item === inputElement.value){
             newList.splice(index,1);
         }
     })
-    localStorage.setItem("experiences",JSON.stringify(newList));
+    sessionStorage.setItem("experiences",JSON.stringify(newList));
     inputElement.value = "";
     inputElement.focus();
     createList();
