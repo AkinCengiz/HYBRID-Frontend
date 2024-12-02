@@ -57,3 +57,15 @@ console.log(numbers2 === numbers3);
 console.log("Numbers2 : ", numbers2);
 console.log("Numbers3 : ", numbers3);
 
+const num2 = JSON.stringify(numbers2);//[1,2,3,4]
+const num3 = JSON.stringify(numbers3);//[1,2,3,4]
+
+
+
+console.log(num2 === num3);
+console.log(num2);
+console.log(num2);
+
+console.log("[84,129,315,200,11]");
+
+console.log("Akın" === "Akın");
