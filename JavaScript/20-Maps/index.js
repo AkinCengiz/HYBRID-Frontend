@@ -56,3 +56,6 @@ for(let [key,value] of colors.entries()){
 }
 
 console.log(colors.size);
+//clear => map nesnesindeki elemanları temizler.
+colors.clear();
+console.log(colors);
