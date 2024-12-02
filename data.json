@@ -1,0 +1,12 @@
+{
+    "categories" : [
+        "Bilgisayar","Cep Telefonu","Mobilya"
+    ],
+    "products" : [
+        { "id":1, "name":"iphone","category":"Bilgisayar","price":1500},
+        { "id":2, "name":"iphone","category":"Bilgisayar","price":1500},
+        { "id":3, "name":"iphone","category":"Bilgisayar","price":1500},
+        { "id":4, "name":"iphone","category":"Bilgisayar","price":1500}
+    ],
+    "age":25
+}
