@@ -46,7 +46,7 @@ for(let color of colors){
     console.log(color);
 }
 for(let color of colors.keys()){
-    console.log(color);
+    console.log("Keys :",color);
 }
 for(let color of colors.values()){
     console.log(color);
