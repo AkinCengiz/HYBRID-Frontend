@@ -16,7 +16,8 @@ const writingInput = (e) => {
 //     console.log("KeyDown",e.target.value);
 // })
 
-document.addEventListener("keydown",writingInput)
+//document.addEventListener("keydown",writingInput)
+document.addEventListener("keypress",writingInput)
 
 // //keydown => klavyede bir tuşa basıldıktan sonra tuş bırakıldığı zaman tetiklenen olay
 // firstnameInput.addEventListener("keyup",(e) => {
