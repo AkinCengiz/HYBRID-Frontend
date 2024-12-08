@@ -1,0 +1,22 @@
+[
+    {
+        "ad":"Kutlay",
+        "soyad" : "Işık"
+    },
+    {
+        "ad":"Murat",
+        "soyad" : "Yılmaz"
+    },
+    {
+        "ad":"Akın",
+        "soyad" : "Cengiz"
+    },
+    {
+        "ad":"Sergen",
+        "soyad" : "Yalçın",
+        "adres":{
+            "city" : "İstanbul",
+            "town": "Beşiktaş"
+        }
+    }
+]
