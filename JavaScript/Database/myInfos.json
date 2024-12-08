@@ -1,0 +1,16 @@
+{
+    "firstname" : "Akın",
+    "lastname" : "Cengiz",
+    "contacts" : {
+        "phone" :"0123 456 78 90",
+        "email" : "akincengiz@msn.com"
+    },
+    "address" : {
+        "city" : "İstanbul",
+        "town" : "Eyüp",
+        "district" : "Göktürk",
+        "street" : "2. Çayır Sk.",
+        "buildNumber" : "8",
+        "apartment":"5"
+    }    
+}

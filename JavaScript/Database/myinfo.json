@@ -1,0 +1,16 @@
+{
+    "personalinfo" : {
+        "firstname" : "Akın",
+        "lastname" : "Cengiz",
+        "phone" : "05340183330",
+        "email" : "akincengiz@msn.com"
+    },
+    "programmingLanguages" : [
+        {"name" : "C#", "level" : 80 },
+        {"name" : "JavaScript", "level" : 80}
+    ],
+    "addresses" : [
+        { "city" : "İstanbul", "town" : "Eyüp", "description" : "Ev"},
+        { "city" : "İstanbul", "town" : "Kağıthane", "description" : "İş"}
+    ]
+}

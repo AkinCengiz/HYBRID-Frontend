@@ -1,0 +1,269 @@
+{
+    "rooms" : [
+        {
+            "id" : 1,
+            "roomNumber" : "100",
+            "area" : 15,
+            "roomType" : 1
+        },
+        {
+            "id" : 2,
+            "roomNumber" : "101",
+            "area" : 15,
+            "roomType" : 1
+        },
+        {
+            "id" : 3,
+            "roomNumber" : "102",
+            "area" : 25,
+            "roomType" : 2
+        },
+        {
+            "id" : 4,
+            "roomNumber" : "103",
+            "area" : 25,
+            "roomType" : 2
+        },
+        {
+            "id" : 5,
+            "roomNumber" : "104",
+            "area" : 40,
+            "roomType" : 3
+        },
+        {
+            "id" : 6,
+            "roomNumber" : "200",
+            "area" : 15,
+            "roomType" : 1
+        },
+        {
+            "id" : 7,
+            "roomNumber" : "201",
+            "area" : 15,
+            "roomType" : 1
+        },
+        {
+            "id" : 8,
+            "roomNumber" : "202",
+            "area" : 25,
+            "roomType" : 2
+        },
+        {
+            "id" : 9,
+            "roomNumber" : "203",
+            "area" : 25,
+            "roomType" : 2
+        },
+        {
+            "id" : 10,
+            "roomNumber" : "204",
+            "area" : 40,
+            "roomType" : 3
+        },
+        {
+            "id" : 11,
+            "roomNumber" : "300",
+            "area" : 15,
+            "roomType" : 1
+        },
+        {
+            "id" : 12,
+            "roomNumber" : "301",
+            "area" : 15,
+            "roomType" : 1
+        },
+        {
+            "id" : 13,
+            "roomNumber" : "302",
+            "area" : 25,
+            "roomType" : 2
+        },
+        {
+            "id" : 14,
+            "roomNumber" : "303",
+            "area" : 25,
+            "roomType" : 2
+        },
+        {
+            "id" : 15,
+            "roomNumber" : "304",
+            "area" : 40,
+            "roomType" : 3
+        },
+        {
+            "id" : 16,
+            "roomNumber" : "400",
+            "area" : 15,
+            "roomType" : 1
+        },
+        {
+            "id" : 17,
+            "roomNumber" : "401",
+            "area" : 15,
+            "roomType" : 1
+        },
+        {
+            "id" : 18,
+            "roomNumber" : "402",
+            "area" : 25,
+            "roomType" : 2
+        },
+        {
+            "id" : 19,
+            "roomNumber" : "403",
+            "area" : 25,
+            "roomType" : 2
+        },
+        {
+            "id" : 20,
+            "roomNumber" : "404",
+            "area" : 40,
+            "roomType" : 3
+        }
+    ],
+    "roomTypes" : [
+        {
+            "id" : 1,
+            "name" : "Single Room",
+            "features" : [
+                {
+                    "bath" : true,
+                    "phone" : true,
+                    "wifi" : true,
+                    "tv" : false,
+                    "service" : false,
+                    "price" : 399,
+                    "bedSize" : "Single Bed",
+                    "imageUrl" : "../images/room_single.jpg",
+                    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum vero dicta ex quisquam. Magni perspiciatis iure, esse, aut voluptatem obcaecati corrupti repudiandae laudantium dolorum odio nulla assumenda. Ea illo dolore perspiciatis dolores, pariatur incidunt inventore, commodi quis voluptatibus unde deserunt, qui nostrum. At alias rem dolor corrupti odio porro, nihil voluptatibus voluptatum id, tempora error sint suscipit tempore architecto consectetur aperiam culpa facere! Optio quibusdam error dolore recusandae necessitatibus?"
+                }
+            ]
+        },
+        {
+            "id" : 2,
+            "name" : "Double Room",
+            "features" : [
+                {
+                    "bath" : true,
+                    "phone" : true,
+                    "wifi" : true,
+                    "tv" : true,
+                    "service" : false,
+                    "price" : 449,
+                    "bedSize" : "Queen-size bed",
+                    "imageUrl" : "../images/room_double.jpg",
+                    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum vero dicta ex quisquam. Magni perspiciatis iure, esse, aut voluptatem obcaecati corrupti repudiandae laudantium dolorum odio nulla assumenda. Ea illo dolore perspiciatis dolores, pariatur incidunt inventore, commodi quis voluptatibus unde deserunt, qui nostrum. At alias rem dolor corrupti odio porro, nihil voluptatibus voluptatum id, tempora error sint suscipit tempore architecto consectetur aperiam culpa facere! Optio quibusdam error dolore recusandae necessitatibus?"
+                }
+            ]
+        },
+        {
+            "id" : 3,
+            "name" : "Deluxe Room",
+            "features" : [
+                {
+                    "bath" : true,
+                    "phone" : true,
+                    "wifi" : true,
+                    "tv" : true,
+                    "service" : true,
+                    "price" : 499,
+                    "bedSize" : "King-size bed",
+                    "imageUrl" : "../images/room_deluxe.jpg",
+                    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum vero dicta ex quisquam. Magni perspiciatis iure, esse, aut voluptatem obcaecati corrupti repudiandae laudantium dolorum odio nulla assumenda. Ea illo dolore perspiciatis dolores, pariatur incidunt inventore, commodi quis voluptatibus unde deserunt, qui nostrum. At alias rem dolor corrupti odio porro, nihil voluptatibus voluptatum id, tempora error sint suscipit tempore architecto consectetur aperiam culpa facere! Optio quibusdam error dolore recusandae necessitatibus?"
+                }
+            ]
+        }
+
+    ],
+    "about" : {
+        "id" : 1,
+        "description" : "Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    },
+    "contact" : {
+        "id" : 1,
+        "address" : "423 Some adr, Chicago, US",
+        "phone" : "+00 151515",
+        "email" : "mail@mail.com"
+    },
+    "images" : [
+        {
+            "id" : 1,
+            "url" : "./images/hotel.jpg",
+            "alt" : "Hotel image"
+        },
+        {
+            "id" : 2,
+            "url" : "./images/cinqueterre.jpg",
+            "alt" : "Cinqueterre image"
+        },
+        {
+            "id" : 3,
+            "url" : "./images/map.jpg",
+            "alt" : "Map image"
+        },
+        {
+            "id" : 4,
+            "url" : "./images/newyork2.jpg",
+            "alt" : "Newyork image"
+        },
+        {
+            "id" : 5,
+            "url" : "./images/paris.jpg",
+            "alt" : "Paris image"
+        },
+        {
+            "id" : 6,
+            "url" : "./images/pisa.jpg",
+            "alt" : "Pisa image"
+        },
+        {
+            "id" : 7,
+            "url" : "./images/sanfran.jpg",
+            "alt" : "Sanfransisco image"
+        }
+    ],
+    "socialAccounts" : [
+        {
+            "id" : 1,
+            "platform":"Facebook",
+            "platformUrl" : "www.facebook.com",
+            "username" : "akincengiz",
+            "icon" : "fa fa-facebook-official w3-hover-opacity"
+        },
+        {
+            "id" : 2,
+            "platform":"Twitter",
+            "platformUrl" : "www.twitter.com",
+            "username" : "akincengiz",
+            "icon" : "fa fa-twitter w3-hover-opacity"
+        },
+        {
+            "id" : 3,
+            "platform":"Instagram",
+            "platformUrl" : "www.instagram.com",
+            "username" : "akincengiz",
+            "icon" : "fa fa-instagram w3-hover-opacity"
+        },
+        {
+            "id" : 4,
+            "platform":"Snapchat",
+            "platformUrl" : "www.snapchat.com",
+            "username" : "akincengiz",
+            "icon" : "fa fa-snapchat w3-hover-opacity"
+        },
+        {
+            "id" : 5,
+            "platform":"Pinterest",
+            "platformUrl" : "www.pinterest.com",
+            "username" : "akincengiz",
+            "icon" : "fa fa-pinterest-p w3-hover-opacity"
+        },
+        {
+            "id" : 6,
+            "platform":"LinkedIn",
+            "platformUrl" : "www.linkedin.com",
+            "username" : "akincengiz",
+            "icon" : "fa fa-linkedin w3-hover-opacity"
+        }
+    ]
+}
