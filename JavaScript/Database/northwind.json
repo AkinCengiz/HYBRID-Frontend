@@ -1,5 +1,5 @@
 {
-  "category": [
+  "categories": [
     {
       "picture": null,
       "entityId": 1,
@@ -49,7 +49,7 @@
       "categoryName": "Seafood"
     }
   ],
-  "customer": [
+  "customers": [
     {
       "fax": "030-0123456",
       "city": "Berlin",
@@ -216,7 +216,7 @@
       "contactTitle": "Sales Manager"
     }
   ],
-  "employee": [
+  "employees": [
     {
       "city": "Seattle",
       "email": null,
@@ -416,7 +416,7 @@
       "titleOfCourtesy": "Ms."
     }
   ],
-  "employeeTerritory": [
+  "employeeTerritories": [
     { "entityId": 1, "employeeId": 1, "territoryCode": "06897" },
     { "entityId": 2, "employeeId": 1, "territoryCode": "19713" },
     { "entityId": 3, "employeeId": 2, "territoryCode": "01581" },
@@ -467,7 +467,7 @@
     { "entityId": 48, "employeeId": 9, "territoryCode": "55113" },
     { "entityId": 49, "employeeId": 9, "territoryCode": "55439" }
   ],
-  "orderDetail": [
+  "orderDetails": [
     {
       "orderId": 10257,
       "discount": 0,
@@ -1965,7 +1965,7 @@
       "unitPrice": 17.45
     }
   ],
-  "product": [
+  "products": [
     {
       "entityId": 1,
       "unitPrice": 18,
@@ -2771,13 +2771,13 @@
       "quantityPerUnit": null
     }
   ],
-  "region": [
+  "regions": [
     { "entityId": 1, "regiondescription": "Eastern" },
     { "entityId": 2, "regiondescription": "Western" },
     { "entityId": 3, "regiondescription": "Northern" },
     { "entityId": 4, "regiondescription": "Southern" }
   ],
-  "salesOrder": [
+  "salesOrders": [
     {
       "freight": 81.91,
       "entityId": 10257,
@@ -3995,7 +3995,7 @@
       "shipPostalCode": "10310"
     }
   ],
-  "shipper": [
+  "shippers": [
     {
       "phone": "(503) 555-0137",
       "entityId": 1,
@@ -4008,7 +4008,7 @@
     },
     { "phone": "(415) 555-0138", "entityId": 3, "companyName": "Shipper ZHISN" }
   ],
-  "supplier": [
+  "suppliers": [
     {
       "fax": null,
       "city": "London",
@@ -4445,7 +4445,7 @@
       "contactTitle": "Accounting Manager"
     }
   ],
-  "territory": [
+  "territories": [
     {
       "entityId": 1,
       "regionId": 1,
