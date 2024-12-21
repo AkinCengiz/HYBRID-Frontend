@@ -58,7 +58,7 @@ function putRequest(url,data){
         fetch(url,{
             method : "PUT",
             body : JSON.stringify(data),
-            headers : { "content-type" : "application/json;"}
+            headers : { "Content-type" : "application/json"}
         })
         .then(response => response.json())
         .then(data => resolve(data))
@@ -66,7 +66,26 @@ function putRequest(url,data){
     })
 }
 
-putRequest("https://jsonplaceholder.typicode.com/albums/100",{
+putRequest("https://jsonplaceholder.typicode.com/albums/5",{
     "userId": 5,
     "title": "Best Of 2000's"
-}).then(console.log(data)).catch(err => console.error(err));
+}).then(data => console.log(data)).catch(err => console.error(err));
+
+putRequest("https://northwind.now.sh/api/categories/5",{
+    "description": "YMYP",
+    "name": "İstanbul Eğitim"
+}).then(data => console.log(data)).catch(err => console.log(err));
+
+//DELETE => 
+    function deleteRequest(url){
+        return new Promise((resolve,reject) => {
+            fetch(url,{method:"DELETE"})
+            .then(response => resolve("Ürün başarıyla silindi..."))
+            .catch(err => reject(err));
+        })
+        
+    }
+
+    deleteRequest("https://northwind.now.sh/api/categories/7")
+    .then(response => console.log(response))
+    .catch(err => console.log(err));
