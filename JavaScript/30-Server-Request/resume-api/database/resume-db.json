@@ -1,0 +1,152 @@
+{
+    "personal-info" :{
+        "firstname" : "Akın",
+        "lastname" : "Cengiz",
+        "address" : {
+            "street" : "2. Çayır Sk.",
+            "district" : "Göktürk",
+            "buildNumber" : "8",
+            "apartmentNo" : 5,
+            "postalCode" : "34077",
+            "town" : "Eyüp",
+            "city" : "İstanbul"
+        },
+        "contact" : {
+            "phone" : "0123 456 78 90",
+            "email" : "akincengiz@msn.com"
+        },
+        "description" : "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+    },
+    "social-accounts" : [
+        {
+            "id":1,
+            "platform" : "https://www.linkedin.com/in",
+            "username" : "akincengiz",
+            "icon" : "fab fa-linkedin-in"
+        },
+        {
+            "id" : 2,
+            "platform" : "https://www.github.com",
+            "username" : "akincengiz",
+            "icon" : "fab fa-github"
+        },
+        {
+            "id" : 3,
+            "platform" : "https://www.facebook.com",
+            "username" : "akincengiz",
+            "icon" : "fab fa-facebook-f"
+        },
+        {
+            "id" : 4,
+            "platform" : "https://www.twitter.com",
+            "username" : "akincengiz",
+            "icon" : "fab fa-twitter"
+        }
+    ],
+    "experiences" : [
+        {
+            "title" : "Senior Web Developer",
+            "company" : "Intelitec Solutions",
+            "description" : "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
+            "startDate" : "Mart 2024",
+            "endDate" : "Devam ediyor"
+        },
+        {
+            "title" : "Web Developer",
+            "company" : "Intelitec Solutions",
+            "description" : "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.",
+            "startDate" : "Ekim 2011",
+            "endDate" : "Mart 2013"
+        },
+        {
+            "title" : "Junior Web Designer",
+            "company" : "Shout! Media Productions",
+            "description" : "Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.",
+            "startDate" : "Temmuz 2010",
+            "endDate" : "Ekim 2011"
+        },
+        {
+            "title" : "Web Design Intern",
+            "company" : "Shout! Media Productions",
+            "description" : "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+            "startDate" : "Eylül 2008",
+            "endDate" : "Haziran 2010"
+        }
+    ],
+    "educations" : [
+        {
+            "school" : "University of Colorado Boulder",
+            "faculty" : "Bachelor of Science",
+            "department" : "Computer Science",
+            "GNO" : 3.23,
+            "startDate" : "Ağustos 2006",
+            "endDate" : "Mayıs 2010"
+        },
+        {
+            "school" : "James Buchanan High School",
+            "faculty" : "Technology Magnet Program",
+            "department" : "Computer Programming",
+            "GNO" : 3.56,
+            "startDate" : "Ağustos 2002",
+            "endDate" : "Mayıs 2006"
+        }
+    ],
+    "skills" : {
+        "programLanguagesAndTools" : [
+            {
+                "title" : "HTML5",
+                "icon" : "fab fa-html5"
+            },
+            {
+                "title" : "CSS3",
+                "icon" : "fab fa-css3-alt"
+            },
+            {
+                "title" : "JavaScript",
+                "icon" : "fab fa-js-square"
+            },
+            {
+                "title" : "AngularJS",
+                "icon" : "fab fa-angular"
+            },
+            {
+                "title" : "ReactJS",
+                "icon" : "fab fa-react"
+            },
+            {
+                "title" : "NodeJS",
+                "icon" : "fab fa-node-js"
+            },
+            {
+                "title" : "SASS",
+                "icon" : "fab fa-sass"
+            },
+            {
+                "title" : "Less",
+                "icon" : "fab fa-less"
+            },
+            {
+                "title" : "WordPress",
+                "icon" : "fab fa-wordpress"
+            },
+            {
+                "title" : "Gulp",
+                "icon" : "fab fa-gulp"
+            },
+            {
+                "title" : "Grunt",
+                "icon" : "fab fa-grunt"
+            },
+            {
+                "title" : "NPM",
+                "icon" : "fab fa-npm"
+            }
+        ],
+        "workflow" : [
+            "Responsive Tasarım",
+            "Katmanlı Mimari",
+            "Nesne Yönelimli Programlama",
+            "Agile Development & Scrum"
+        ]
+    }
+}
