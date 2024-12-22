@@ -1,0 +1,43 @@
+{
+    "products" : [
+        {
+            "title" : "Basic",
+            "features" : [
+                "Web Design",
+                "Photography",
+                "1GB Storage",
+                "Mail Support"
+            ],
+            "payment" : {
+                "price" : 10.0,
+                "expired" : "per month"
+            }            
+        },
+        {
+            "title" : "PRO",
+            "features" : [
+                "Web Design",
+                "Photography",
+                "50GB Storage",
+                "Endless Support"
+            ],
+            "payment" : {
+                "price" : 25.0,
+                "expired" : "per month"
+            }                      
+        },
+        {
+            "title" : "Premium",
+            "features" : [
+                "Web Design",
+                "Photography",
+                "Unlimited Storage",
+                "Endless Support"
+            ],
+            "payment" : {
+                "price" : 35.0,
+                "expired" : "per month"
+            }            
+        }
+    ]
+}

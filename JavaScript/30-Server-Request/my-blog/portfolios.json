@@ -1,0 +1,34 @@
+{
+    "portfolios" : [
+        {
+            "images" : "./images/mountains.jpg",
+            "title" : "Mountains",
+            "description" : "Mountains : Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+            "images" : "./images/lights.jpg",
+            "title" : "Lights",
+            "description" : "Lights : Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+            "images" : "./images/nature.jpg",
+            "title" : "Nature",
+            "description" : "Nature : Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+            "images" : "./images/p1.jpg",
+            "title" : "Sis",
+            "description" : "Sis : Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+            "images" : "./images/p2.jpg",
+            "title" : "Coffee",
+            "description" : "Coffee : Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+            "images" : "./images/p3.jpg",
+            "title" : "Bear",
+            "description" : "Bear : Some quick example text to build on the card title and make up the bulk of the card's content."
+        }
+    ]
+}

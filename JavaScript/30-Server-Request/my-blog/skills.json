@@ -1,0 +1,36 @@
+{
+    "skills" : [
+        {
+            "title" : "HTML",
+            "degree" : 100
+        },
+        {
+            "title" : "CSS",
+            "degree" : 90
+        },
+        {
+            "title" : "JavaScript",
+            "degree" : 65
+        },
+        {
+            "title" : ".Net",
+            "degree" : 80
+        },
+        {
+            "title" : "Bootstrap",
+            "degree" : 70
+        },
+        {
+            "title" : "MS Sql Server",
+            "degree" : 85
+        },
+        {
+            "title" : "Ntier Architecture",
+            "degree" : 65
+        },
+        {
+            "title" : "React JS",
+            "degree" : 30
+        }
+    ]
+}

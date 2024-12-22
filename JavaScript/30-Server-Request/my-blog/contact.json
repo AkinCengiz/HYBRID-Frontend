@@ -1,0 +1,8 @@
+{
+    "email" : "akincengiz@ymyp.com",
+    "phone" : "0123 456 78 90",
+    "address" : {
+        "city" : "İstanbul",
+        "town" : "Eyüp"
+    }
+}
