@@ -9,5 +9,16 @@ const accessControl = (req,res,next) => {
     next();
 }
 
+const denemeMiddleware = (req,res,next) => {
+    const yetki = true;
+    if(!yetki){
+        res.status(401).json({
+            success : false,
+            message : "İşlem için yeterli izine sahip değilsiniz..."
+        });
+    }
+    next();
+}
 
-module.exports = accessControl;
+
+module.exports = {accessControl, denemeMiddleware}
