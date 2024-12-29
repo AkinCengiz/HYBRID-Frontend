@@ -44,7 +44,14 @@ router.get("/",(req,res) => {
     res.json(products);
 });
 
-router.get("/:id")
+router.get("/:id",(req,res) => {
+    const productId = parseInt(req.params.id);
+    for(let i = 0; i < products.length; i++){
+        if(products[i].id === productId){
+            res.status(200).json(products[i]);
+        }
+    }
+})
 
 router.post("/",(req,res) => {
     const id = products[products.length-1].id + 1;
