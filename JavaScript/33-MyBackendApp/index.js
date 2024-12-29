@@ -10,9 +10,9 @@ const getUsers = async() => {
         mainContainer.innerHTML += `
             <div class="card m-3" style="width: 18rem;">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID : ${user.id}</li>
-                <li class="list-group-item">Firstname : ${user.firstname}</li>
-                <li class="list-group-item">Lastname : ${user.lastname}</li>                
+                <li class="list-group-item bg-success">ID : ${user.id}</li>
+                <li class="list-group-item bg-success">Firstname : ${user.firstname}</li>
+                <li class="list-group-item bg-success">Lastname : ${user.lastname}</li>                
             </ul>
         </div>
         `;
@@ -29,15 +29,15 @@ const getProducts = async () => {
     data.forEach(product => {
         productsList.innerHTML += `
             <div class="card m-3" style="width: 18rem;">
-                <div class="card-body">
+                <div class="card-body bg-info">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Id : ${product.id}</li>
-                    <li class="list-group-item">Category : ${product.category}</li>
-                    <li class="list-group-item">Stock : ${product.stockAmount}</li>
-                    <li class="list-group-item">Price : ${product.price}</li>
+                    <li class="list-group-item bg-info">Id : ${product.id}</li>
+                    <li class="list-group-item bg-info">Category : ${product.category}</li>
+                    <li class="list-group-item bg-info">Stock : ${product.stockAmount}</li>
+                    <li class="list-group-item bg-info">Price : ${product.price}</li>
                 </ul>
                 <div class="card-body">
                     <a href="#" class="card-link">Card link</a>
@@ -55,9 +55,35 @@ const getCategories = async () => {
     const data = await response.json();
     data.forEach(category => {
         categoryList.innerHTML += `
-            <li class="list-group-item">${category.name}</li>
+            <li class="list-group-item bg-secondary">${category.name}</li>
         `;
     })
 }
 
 getCategories();
+
+//Customer controller
+
+/*
+firstname, lastname, email, City, Town, phone, balance
+*/
+
+const customerContainer = document.querySelector("#customer-container");
+
+const getCustomers = async () => {
+    const response = await fetch(url+"/customers");
+    const data = await response.json();
+    data.forEach(customer => {
+        customerContainer.innerHTML += `
+            <div class="card m-3 " style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-danger">ID : ${customer.id}</li>
+                <li class="list-group-item bg-danger">Firstname : ${customer.firstname}</li>
+                <li class="list-group-item bg-danger">Lastname : ${customer.lastname}</li>                
+            </ul>
+        </div>
+        `;
+    })
+}
+
+getCustomers();

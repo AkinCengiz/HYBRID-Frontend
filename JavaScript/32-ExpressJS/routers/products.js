@@ -44,6 +44,8 @@ router.get("/",(req,res) => {
     res.json(products);
 });
 
+router.get("/:id")
+
 router.post("/",(req,res) => {
     const id = products[products.length-1].id + 1;
     products.push({id:id,...req.body})
