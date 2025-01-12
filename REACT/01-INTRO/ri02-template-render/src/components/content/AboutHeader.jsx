@@ -1,10 +1,10 @@
-
-function AboutHeader() {
+import PropTypes from "prop-types"
+function AboutHeader({ generalCount }) {
   return (
     <>
         <div className="w3-container w3-padding-32" id="about">
         <h3 className="w3-border-bottom w3-border-light-grey w3-padding-16">
-          About
+          About - {generalCount}
         </h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -23,3 +23,6 @@ function AboutHeader() {
 }
 
 export default AboutHeader
+AboutHeader.propTypes = {
+  generalCount : PropTypes.number
+}
