@@ -2,7 +2,6 @@ import TaskForm from "./TaskForm"
 
 function App() {
   
-
   return (
     <>
     <div className="container p-3 bg-secondary">

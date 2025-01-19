@@ -1,21 +1,33 @@
 import PropTypes from "prop-types";
-function TaskList({tasks,removeTask}) {
+import { useEffect } from "react";
+import { useState } from "react";
+import TaskHeader from "./TaskHeader";
+import TaskListItem from "./TaskListItem";
+function TaskList({tasks,removeTask,editTask}) {
+    const [important,setImportant] = useState(false);
+    const [filteredTasks,setFilteredTasks] = useState(tasks);
+
+    function handleTasksFilter(){
+        const newImportant = !important;
+        newImportant ? setFilteredTasks(tasks.filter(item => item.important === true)):setFilteredTasks(tasks);
+        setImportant(newImportant);
+    }
+
+    useEffect(() => {
+        setFilteredTasks(tasks);
+    },[tasks]);
+
     if(tasks.length === 0){
         return<></>
     }
   return (
     <>
     <div className="pt-3">
-        <h4>Task List</h4>
-        <ul className="list-group">
+        <TaskHeader important={important} handleTasksFilter={handleTasksFilter} />
+        
+        <ul className="list-group w-100">
             {
-                tasks.map((item,index) => 
-                <li className="list-group-item d-flex justify-content-between" key={index}>{item.task} <span>{item.important ? "Important" : "Normal"}</span> 
-                    <div className="btn-group float-end" role="group">
-                        <button type="button" className="btn btn-sm btn-success">UPDATE</button>
-                        <button type="button" className="btn btn-sm btn-danger" onClick={() => removeTask(item.id)}>DELETE</button>
-                    </div>
-                </li>)
+                filteredTasks.map((item,index) => <TaskListItem item={item} key={index} removeTask={removeTask} editTask={editTask} />)
             }
         </ul>
     </div>
@@ -27,5 +39,6 @@ export default TaskList
 
 TaskList.propTypes = {
     tasks : PropTypes.array,
-    removeTask : PropTypes.func
+    removeTask : PropTypes.func,
+    editTask : PropTypes.func
 }

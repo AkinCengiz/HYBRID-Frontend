@@ -1,0 +1,48 @@
+import React, { createContext, useState } from 'react';
+
+export const ThemeContext = createContext('light');
+
+export const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
+
+-----------------------------------------------------------------
+
+
+import React, { useContext } from 'react';
+import { ThemeContext } from './ThemeProvider';
+
+const Navbar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  return (
+    <nav className={`navbar ${theme}`}>
+      <div className="navbar-brand">
+        <h1>My App</h1>
+        <button onClick={toggleTheme}>Toggle Theme</button>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+
+ÖDEV
+FİLM OLUŞTUR
+Adı,
+image = loremPicsum
+süre : 120dk
+
+Film oluşturulduğunda formun altında card biçiminde listelenecek.
+cardlar yan yana 4 tane olacak 4 ten sonra olan bir alt satırdan devam edecek.
