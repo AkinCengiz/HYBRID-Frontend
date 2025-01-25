@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 
-function Navbar() {
+function Navbar({user,handleLogout}) {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -42,15 +43,26 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/productdetails">
-                  Ürün Detay
-                </NavLink>
-              </li>
-              <li className="nav-item">
                 <NavLink className="nav-link" to="/productlist">
                   Ürün Listesi
                 </NavLink>
               </li>
+              {
+                user ? <><li className="nav-item">
+                <NavLink className="nav-link" to="/favorites">
+                  Favoriler
+                </NavLink>
+              </li><li className="nav-item">
+                <button className="nav-link" onClick={handleLogout}>
+                  Logout - {user.firstname} {user.lastname}
+                </button>                
+                </li></> :
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/login">
+                    Login
+                  </NavLink>
+                </li>
+              }
             </ul>
           </div>
         </div>
@@ -60,3 +72,8 @@ function Navbar() {
 }
 
 export default Navbar;
+
+Navbar.propTypes = {
+  user : PropTypes.object,
+  handleLogout : PropTypes.func
+}

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import ProductCard from "./products/ProductCard";
+import PropTypes from "prop-types"
 
 // Kategoriye ait ürünleri listeleyen komponent
 
 
-
-function Category() {
+function Category({setFavorites, favorites}) {
     const {categoryName} = useParams();
     const [productsInCategory,setProductsInCategory] = useState([]);
     
@@ -22,7 +22,7 @@ function Category() {
               <div className="row  row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 justify-content-between">
               
                 {
-                  productsInCategory.map(product => <ProductCard key={product.id} product={product} />)
+                  productsInCategory.map(product => <ProductCard key={product.id} product={product} setFavorites={setFavorites} favorites={favorites} />)
                 }
               
             </div>
@@ -31,3 +31,7 @@ function Category() {
 }
 
 export default Category
+Category.propTypes = {
+  setFavorites : PropTypes.func,
+  favorites : PropTypes.array
+}

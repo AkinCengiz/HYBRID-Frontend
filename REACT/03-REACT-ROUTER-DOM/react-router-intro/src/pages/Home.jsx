@@ -1,7 +1,8 @@
 import Categories from "../components/Categories"
 import Products from "./Products"
+import PropTypes from "prop-types";
 
-function Home() {
+function Home({favorites, setFavorites}) {
   return (
     <>
       <div className="row justify-content-between w-100">
@@ -9,7 +10,7 @@ function Home() {
           <Categories/>
         </div>
         <div className="col-sm-12 col-md-9">
-          <Products />
+          <Products favorites={favorites} setFavorites={setFavorites} />
         </div>
       </div>
     </>
@@ -17,3 +18,8 @@ function Home() {
 }
 
 export default Home
+
+Home.propTypes = {
+  favorites : PropTypes.array,
+  setFavorites : PropTypes.func
+}
