@@ -5,6 +5,8 @@ import Products from "../pages/Products";
 import Contact from "../pages/Contact";
 import ProductDetails from "../pages/ProductDetails";
 import NotFound from "../pages/NotFound";
+import ProductList from "../pages/ProductList";
+import Category from "./Category";
 
 
 function SiteRoutes() {
@@ -13,6 +15,10 @@ function SiteRoutes() {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/productlist" element={<ProductList/>} >
+          <Route index={true} element={<Products/>}/>
+          <Route path="category/:categoryName" element={<Category/>}/>
+        </Route>
         <Route path="/contact" element={<Contact />} />
         {/* Alttaki route kaldırılacak. Sayfa içerisinden yönlendirme yapılacak */}
         <Route path="/productdetails" element={<ProductDetails />} />
