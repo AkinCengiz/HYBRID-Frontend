@@ -1,3 +1,5 @@
+import Colors from "./Colors";
+
 function SectionOne() {
   return (
     <>
@@ -7,26 +9,7 @@ function SectionOne() {
           <h2>Color Classes</h2>
         </div>
 
-        <div className="w3-row">
-          <div className="w3-col w3-container m2 w3-red">
-            <p>Red</p>
-          </div>
-          <div className="w3-col w3-container m2 w3-blue">
-            <p>Blue</p>
-          </div>
-          <div className="w3-col w3-container m2 w3-blue-grey">
-            <p>Blue Grey</p>
-          </div>
-          <div className="w3-col w3-container m2 w3-teal">
-            <p>Teal</p>
-          </div>
-          <div className="w3-col w3-container m2 w3-yellow">
-            <p>Yellow</p>
-          </div>
-          <div className="w3-col w3-container m2 w3-orange">
-            <p>Orange</p>
-          </div>
-        </div>
+        <Colors />
 
         <hr />
         <div className="w3-center">
