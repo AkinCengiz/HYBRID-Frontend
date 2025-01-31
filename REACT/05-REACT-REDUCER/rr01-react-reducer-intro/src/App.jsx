@@ -1,6 +1,7 @@
 import { useReducer } from "react"
 import Counter from "./components/Counter"
 import { ADD, DELETE, initialValue, todoReducer } from "./reducers/todos/todos"
+import TodoForm from "./components/todos/TodoForm";
 
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
   const [todo,dispatch] = useReducer(todoReducer,initialValue);
   return (
     <>
+      <TodoForm/>
+      <hr />
       <Counter />
       <h1>TODO</h1>
       <h3>TODO : {todo.count}</h3>

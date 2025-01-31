@@ -1,5 +1,5 @@
 {
-  "name": "rr01-react-reducer-intro",
+  "name": "rr01-redux-intro",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "uuid": "^11.0.5"
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
